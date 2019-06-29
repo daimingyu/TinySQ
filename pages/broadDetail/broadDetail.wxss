@@ -1,0 +1,6 @@
+page{
+  height: 100%;
+}
+.broad-detail{
+  padding-bottom: 110rpx;
+}

@@ -1,0 +1,3 @@
+<view class='broad-item' bindtap='handleClick' style="background-image: url('{{item.thumb}}');" data-channelname="{{item.ch_name}}" data-name="{{item.name}}">
+    <text>{{item.name}}</text>
+</view>

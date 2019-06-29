@@ -1,0 +1,41 @@
+.rank-item{
+  background-color: #f5f5f5;
+  margin-bottom: 20rpx;
+  display: flex;
+}
+.content{
+  flex: 1;
+  font-size: 25rpx;
+  padding: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.name{
+  font-weight: bold;
+  font-size: 30rpx;
+}
+.profile{
+  height: 220rpx;
+  width: 220rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner{
+  height: 150rpx;
+  width: 150rpx;
+}
+.top-item{
+  width: 400rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 10rpx;
+}
+.title{
+  color: #171717;
+}
+.author{
+  color: #6a6a6a;
+}

@@ -1,0 +1,5 @@
+
+var hexColor = function(color) {
+  return !!color && color.replace('0x', '#');
+}
+module.exports = hexColor;

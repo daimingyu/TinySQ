@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "精选电台",
+  "usingComponents": {
+    "broadItem": "../../components/broadItem/broadItem",
+    "player": "../../components/player/player"
+  }
+}

@@ -1,0 +1,6 @@
+<view class='broad-detail'>
+  <view wx:for='{{dataSource}}' wx:for-item="item" wx:for-index="index">
+      <listItem songid="{{item.songid}}" name="{{item.title}}" artname="{{item.artist}}" bg="{{item.thumb}}"/>
+  </view>
+</view>
+<player />

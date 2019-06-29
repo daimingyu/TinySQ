@@ -1,0 +1,11 @@
+<view class='list-item' bindtap='handleClick' data-id="{{songid}}">
+  <view class='profile'>
+    <image class='banner' src="{{bg}}" mode='aspectFit'></image>
+  </view>
+  <view class='content'>
+    <text class='name'>{{name}}</text>
+    <view class='artist'>
+      {{artname}}
+    </view>
+  </view>
+</view>

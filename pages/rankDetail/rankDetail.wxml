@@ -1,0 +1,12 @@
+<!--pages/rankDetail.wxml-->
+<view class='music-detail'>
+  <view class='detail-banner' style="background-color: {{color}};">
+    <image src="{{bg}}" mode="aspectFit"></image>
+  </view>
+  <view class='detail-wrap'>
+    <view wx:for='{{dataSource}}' wx:for-item="item" wx:for-index="index">
+      <listItem songid="{{item.song_id}}" name="{{item.title}}" artname="{{item.artist_name}}" bg="{{item.pic_big}}"/>
+    </view>
+  </view>
+</view>
+<player />

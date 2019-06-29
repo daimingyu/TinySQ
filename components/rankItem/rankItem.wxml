@@ -1,0 +1,17 @@
+<wxs src="../../utils/hexColor.wxs" module="hexColor" />
+<view class='rank-item' bindtap='handleClick' data-type="{{item.type}}" data-name="{{item.name}}" data-bg="{{item.bg_pic}}" data-color="{{hexColor(item.bg_color)}}">
+  <view class='content'>
+    <text class='name'>{{item.name}}</text>
+    <view class='top123'>
+      <view wx:for='{{item.content}}'  wx:for-item="citem" wx:for-index="cindex">
+        <view wx:if="{{cindex<3}}" class='top-item'>
+          <text class='title'>{{cindex + 1}}、{{citem.title}} - </text>
+          <text class='author'>{{citem.author}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='profile' style="background-color: {{hexColor(item.bg_color)}};">
+    <image class='banner' src="{{item.bg_pic}}" mode='aspectFit'></image>
+  </view>
+</view>

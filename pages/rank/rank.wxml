@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<wxs src="../../utils/hexColor.wxs" module="hexColor" />
+<view class='music-rank'>
+  <view wx:for='{{dataSource}}' wx:for-item="item" wx:for-index="index">
+    <rankItem item="{{item}}" />
+  </view>
+</view>
+<player />

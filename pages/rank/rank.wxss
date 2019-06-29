@@ -1,0 +1,8 @@
+/**index.wxss**/
+page{
+  height: 100%;
+  background-color: #fafafa;
+}
+.music-rank{
+  padding: 30rpx 30rpx 110rpx 30rpx;
+}

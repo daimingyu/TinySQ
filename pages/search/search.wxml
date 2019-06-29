@@ -1,0 +1,33 @@
+<view class="search">
+  <view class="serach-header">
+    <input class="stext" placeholder="搜一下吧" auto-focus bindconfirm="handleSearch"/>
+    <!-- <image class="go" src="../../imgs/right.png" bindtap="handleSearch"></image> -->
+  </view>
+  <view class="search-container">
+    <view wx:if="{{dataSource.length == 0}}" class="key-search">
+      <text class="key-search-title">搜索关键词</text>
+      <view class="key-search-container">
+        <view class="key-search-line">
+          <text class="key-search-text" bindtap="handleKeySearch" data-name="网络歌曲">网络歌曲</text>
+          <text class="key-search-split">|</text>
+          <text class="key-search-text"  bindtap="handleKeySearch" data-name="经典老歌">经典老歌</text>
+          <text class="key-search-split">|</text>
+          <text class="key-search-text"  bindtap="handleKeySearch" data-name="火爆新歌">火爆新歌</text>
+        </view>
+        <view class="key-search-line">
+          <text class="key-search-text"  bindtap="handleKeySearch" data-name="日韩歌曲">日韩歌曲</text>
+          <text class="key-search-split">|</text>
+          <text class="key-search-text"  bindtap="handleKeySearch" data-name="动漫歌曲">动漫歌曲</text>
+          <text class="key-search-split">|</text>
+          <text class="key-search-text"  bindtap="handleKeySearch" data-name="欧美歌曲">欧美歌曲</text>
+        </view>
+      </view>
+    </view>
+    <view class="search-result">
+      <view wx:for='{{dataSource}}' wx:for-item="item" wx:for-index="index">
+        <listItem songid="{{item.songid}}" name="{{item.title}}" artname="{{item.author}}" bg="{{item.pic}}"/>
+      </view>
+    </view>
+  </view>
+</view>
+<player />

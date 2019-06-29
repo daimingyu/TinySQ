@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<wxs src="../../utils/hexColor.wxs" module="hexColor" />
+<view class='choice-broadcast'>
+  <view class="cb-wrap" wx:for='{{dataSource}}' wx:for-item="item" wx:for-index="index">
+    <broadItem item="{{item}}" />
+  </view>
+</view>
+<player />
+

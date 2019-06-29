@@ -1,0 +1,27 @@
+/**index.wxss**/
+page{
+  height: 100%;
+  background-color: #fafafa;
+}
+
+.choice-broadcast{
+  background-color: #fafafa;
+  width: 700rpx;
+  margin: 0 auto;
+  padding-bottom: 110rpx;
+}
+
+.choice-broadcast::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.cb-wrap{
+  width: 350rpx;
+  height: 350rpx;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

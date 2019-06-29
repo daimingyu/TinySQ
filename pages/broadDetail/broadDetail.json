@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "listItem": "../../components/listItem/listItem",
+    "player": "../../components/player/player"
+  }
+}
